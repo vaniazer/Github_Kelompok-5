@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/front"
+    tools:context=".DaftarActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user"
+        android:layout_width="250dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/daftar_username"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan Username"
+            android:background="@drawable/input"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/white"
+            android:paddingStart="5dp"
+            android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nama"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user">
+
+        <EditText
+            android:id="@+id/daftar_nama"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan Nama Lengkap"
+            android:background="@drawable/input"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/white"
+            android:paddingStart="5dp"
+            android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/daftar_password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan Password"
+            android:background="@drawable/input"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColorHint="@color/white"
+            android:paddingStart="5dp"
+            android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telepon"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass">
+
+        <EditText
+            android:id="@+id/daftar_telepon"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan Nomor Telepon"
+            android:background="@drawable/input"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColorHint="@color/white"
+            android:paddingStart="5dp"
+            android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="36dp"
+        android:padding="12dp"
+        android:layout_below="@id/telepon">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_kembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:text="Back"
+            android:background="@drawable/keluar"
+            android:textColor="@color/white"
+            android:elevation="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:text="Save"
+            android:background="@drawable/simpan"
+            android:textColor="@color/white"
+            android:elevation="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

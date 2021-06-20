@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfilFragment">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:elevation="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:orientation="vertical"
+        android:layout_below="@id/lblUsername"
+        android:layout_marginTop="18dp"
+        android:layout_marginHorizontal="36dp"
+        android:padding="18dp"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/lblNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": Nama "
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Phone"
+                android:layout_weight="3"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/lblPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text=": Phone"
+                android:layout_weight="1"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_hapus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:layout_below="@id/ll_preview">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Delete Account"
+            android:background="@drawable/keluar">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="36dp"
+        android:padding="12dp"
+        android:layout_below="@id/linear_hapus">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:text="Edit Profile"
+            android:background="@drawable/edit"
+            android:textColor="@color/white"
+            android:elevation="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:text="Log out"
+            android:background="@drawable/keluar"
+            android:textColor="@color/white"
+            android:elevation="8dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
